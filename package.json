@@ -1,0 +1,33 @@
+{
+  "name": "suprsonic",
+  "version": "0.3.0",
+  "description": "Suprsonic TypeScript SDK. One API key, dozens of capabilities for your AI agent.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-mega-Enterprise/suprsonic-js.git"
+  },
+  "homepage": "https://suprsonic.ai",
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["suprsonic", "ai-agent", "unified-api", "sdk"]
+}
